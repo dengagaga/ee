@@ -111,7 +111,7 @@ body {
     padding: 9px 70px;
 }
 .header {
-    background: url(../img/fonG.png);
+    background: url(./img/fonG.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
