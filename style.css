@@ -138,13 +138,16 @@ body {
 }
 .nav_link {
     color: var(--color-default);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 .lang {
-    color: #EBEAF0;
+    color: #363636;
     font-weight: 500;
     font-size: 20px;
+}
+.lang_footer {
+      color: #EBEAF0; 
 }
 .lang.mobile {
     display: none;
@@ -194,7 +197,7 @@ body {
     color: #141414CC;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
 }
 .title-1 {
     color: #141414;
@@ -286,13 +289,13 @@ body {
     color: #363636;
     font-size: 20px;
     max-width: 300px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 
 .section_pay {
     padding: 75px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background: linear-gradient(90deg, #515AC1 0%, #303678 100%);
     border-radius: 75px;
 }
@@ -305,12 +308,33 @@ body {
     max-width: 747px;
     margin: 0 auto;
 }
+.section_pay--2 {
+    padding: 95px;
+}
 .section_pay-all {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
 }
+.section_pay-all--2 {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 112px;
+}
+.section_pay-all--2-text {
+    font-size: 18px;
+    color: white;
+    margin-top: 30px;
+}
+.section_pay-all--2-all p{
+    text-align: left;
+}
+.section_pay-all--2-all h3{
+    text-align: left;
+}
+
 .section_big {
     background: url(./img/setka.png);
     background-size: cover;
@@ -321,7 +345,7 @@ body {
     position: relative;
 }
 .section_discover-top--big {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .icon {
     position: absolute;
@@ -436,46 +460,65 @@ body {
     margin-bottom: 115px;
 }
 .FAQ_bot {
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 .FAQ-item {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #0000000F;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 9.3px 0px #3036784D;
+    padding: 20px 50px;
 }
 .FAQ-item-click {
     position: relative;
-    padding: 14px 32px;
+    /* padding: 14px 32px; */
     display: flex;
     justify-content: space-between;
     width: 100%;
     cursor: pointer;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #12275C;
     line-height: 25.2px;
     /* transition: all 0.3s ; */
 }
 .FAQ-item-drop {
     max-height: 0px;
     opacity: 0;
-    
-    padding-left: 32px;
+    /* padding-top: 10px; */
+    padding-left: 10px;
     transition: all 0.3s;
+    position: relative;
+}
+.FAQ-item-drop::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    
+    border-radius: 200px;
+    background-color: #12275C;
+    left: 0px;
+    top: 10px;
+    bottom: 10px;
 }
 svg {
     transition: all 0.3s ;
 }
 .rot svg{
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 .active .FAQ-item-drop {
     transition: all 0.3s;
+    padding-top: 10px;
     max-height: 154px;
     opacity: 1;
     padding-bottom: 10px;
 }
-.FAQ-item-click::after {
+/* .FAQ-item-click::after {
     content: '';
     position: absolute;
     width: 8px;
@@ -485,7 +528,7 @@ svg {
     top: 50%;    
     transform: translateY(-50%);
     left: 0px;
-}
+} */
 
 
 
@@ -642,9 +685,9 @@ svg {
 }
 
 
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
     .nav_link {
-        font-size: 18px;
+        font-size: 14px;
     }
     .lang {
         font-size: 18px;
@@ -685,7 +728,7 @@ svg {
         max-width: 650px;
     }
     .section_big-list {
-        margin-bottom: 200px;
+        margin-bottom: 160px;
     }
     .section_pay-title-4 {
         font-size: 32px;
@@ -712,6 +755,7 @@ svg {
     }
     .lang.mobile {
         display: block;
+        color:white;
         margin-top: 50px;
     }
     .logotype {
@@ -742,6 +786,7 @@ svg {
     }
     .nav_link {
         font-size: 25px;
+        color: white;
     }
     .nav_links--active {
         transform: translateX(0);
@@ -813,12 +858,12 @@ svg {
         font-size: 31px;
     }
     .section_big {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        /* padding-top: 100px;
+        padding-bottom: 100px; */
     }
     .icon {
         max-width: 450px;
-        top: 280px;
+        
     }
     .section_big-list {
         margin-bottom: 150px;
@@ -847,9 +892,11 @@ svg {
     }
     .FAQ-item-click {
         position: relative;
-        padding: 14px 30px;
-        font-size: 17px;
+        font-size: 18px;
    
+    }
+    .polo {
+        max-width: 400px;
     }
     .form-inp {
         max-width: 400px;
@@ -925,7 +972,7 @@ svg {
 }
 @media (max-width: 768px) {
     .header {
-        background-image: url(./img/FonPlan.png);
+        /* background-image: url(./img/FonPlan.png); */
     }
     .title-1 {
         font-size: 80px;
@@ -940,6 +987,14 @@ svg {
 
     .title-5 {
         font-size: 16px;
+    }
+    .section_pay-all--2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .section_pay--2 {
+        padding: 35px;
     }
     .text {
         color: var(--color-default);
@@ -989,7 +1044,7 @@ svg {
     }
     .icon {
         max-width: 350px;
-        top: 240px;
+        
     }
     .section_discover-bot {
         gap: 30px;
@@ -1062,6 +1117,14 @@ svg {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .section_pay-all--2-all p {
+    text-align: left;
+    font-size: 16px;
+}
+    .section_pay-all--2-all h3 {
+    text-align: left;
+    font-size: 26px;
+}
 }
 .form_right-btn {
     display: none;
@@ -1077,20 +1140,16 @@ svg {
         flex-direction: column;
     }
     .header {
-        background: url(./img/fonMobil.png);
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        height: 100%;
-/*         min-height: 100vh; */
+       
     }
     .form_all {
-        background: url(./img/fonMobil.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
+        padding-bottom: 227px;
     }
+    .polo {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
     .footer_right-bot {
         flex-direction: column;
     }
@@ -1186,7 +1245,7 @@ svg {
     .section_big-list {
         width: 100%;
         max-width: 450px;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
     .section_pay-title-4 {
         margin-bottom: 30px;
@@ -1213,7 +1272,7 @@ svg {
         max-width: 250px;
     }
     .FAQ-item-drop {
-        font-size: 14px;
+        font-size: 13px;
         max-width: 320px;
     }
     .form_left {
@@ -1232,6 +1291,21 @@ svg {
         display: flex;
         height: 30px;
     }
+    .section_pay-all--2-all p {
+    text-align: left;
+    font-size: 16px;
+}
+    .section_pay-all--2-all h3 {
+    text-align: left;
+   font-size: 26px;
+}
+.FAQ-item {
+    padding: 15px 30px;
+    font-size: 16px;
+}
+.FAQ_title {
+    margin-bottom: 40px;
+}
 }
 
 /* анимации, стили анимаций */
