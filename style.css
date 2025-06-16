@@ -1140,7 +1140,8 @@ svg {
         flex-direction: column;
     }
     .header {
-       
+       background: url(./img/tel.png);
+       background-position: center;
     }
     .form_all {
         padding-bottom: 227px;
@@ -1311,14 +1312,14 @@ svg {
 /* анимации, стили анимаций */
 ._anim-items {
 	opacity: 0;
-	-webkit-transition: all 0.8s ease 0s;
-	transition: all 0.8s ease 0s;
+	-webkit-transition: all 0.9s ease 0s;
+	transition: all 0.9s ease 0s;
 }
 
 ._anim-items._active {
 	opacity: 1;
-	-webkit-transition: all 0.8s ease 0s;
-	transition: all 0.8s ease 0s;
+	-webkit-transition: all 0.9s ease 0s;
+	transition: all 0.9s ease 0s;
 }
 
 ._anim-items._anim-translate {
@@ -1332,14 +1333,14 @@ svg {
 }
 
 ._anim-delay-01s._active {
-    transition: all 0.8s ease 0.1s;
+    transition: all 0.9s ease 0.1s;
 }
 ._anim-delay-02s._active {
-    transition: all 0.8s ease 0.2s;
+    transition: all 0.9s ease 0.2s;
 }
 ._anim-delay-03s._active {
-    transition: all 0.8s ease 0.3s;
+    transition: all 0.9s ease 0.3s;
 }
 ._anim-delay-04s._active {
-    transition: all 0.8s ease 0.4s;
+    transition: all 0.9s ease 0.4s;
 }
