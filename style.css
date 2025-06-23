@@ -1079,6 +1079,9 @@ svg {
     .header {
         /* background-image: url(./img/FonPlan.png); */
     }
+    .section_pay {
+        padding: 35px;
+    }
     .title-1 {
         font-size: 80px;
         line-height: 71px;
