@@ -541,11 +541,9 @@ svg {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 74px;
-    padding-bottom: 94px;
+    padding-bottom: 200px;
 }
 
-.form {
-}
 .form-top {
     display: flex;
     justify-content: space-between;
@@ -1241,7 +1239,7 @@ svg {
         width: 100%;
     }
     .form_all {
-        padding-bottom: 227px;
+        padding-bottom: 288px;
     }
     .polo {
     position: absolute;
