@@ -699,16 +699,16 @@ svg {
     background-size: contain;
 }
 .contact-address::before {
-    background-image: url(../img/map.svg);
+    background-image: url(./img/map.svg);
 }
 .contact-tel::before {
-    background-image: url(../img/phone.svg);
+    background-image: url(./img/phone.svg);
 }
 .contact-phone::before {
-    background-image: url(../img/fax.svg);
+    background-image: url(./img/fax.svg);
 }
 .contact-mail::before {
-    background-image: url(../img/email.svg);
+    background-image: url(./img/email.svg);
 }
 .footer__contact-item:not(:last-child) {
     margin-bottom: 15px;
