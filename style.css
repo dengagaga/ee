@@ -608,8 +608,8 @@ svg {
 }
 .polo {
     position: absolute;
-    right: 80px;
-    bottom: -130px;
+    right: 10px;
+    bottom: -135px;
 }
 .mobil_img {
     display: none;
@@ -830,10 +830,21 @@ svg {
         gap: 60px;
 
     }
+    .polo {
+        max-width: 511px;
+        height: 320px;
+        right: 10px;
+        bottom: -80px;
+    }
+    .form_all {
+        padding-bottom: 135px;
+    }
 }
 @media (max-width: 1300px) {
 .polo {
-    bottom: -180px;
+    bottom: -100px;
+    max-width: 440px;
+        height: 280px;
 }
 }
 
@@ -1231,7 +1242,7 @@ svg {
         font-size: 60px;
     }
     .header_all {
-        margin-top: 60px;
+        margin-top: 100px;
     }
     .header_all-btn  {
         max-width: 500px;
@@ -1240,7 +1251,7 @@ svg {
         flex-direction: column;
     }
     .header {
-       background: url(./img/tel.png);
+       background: url(./img/tel2.png);
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
