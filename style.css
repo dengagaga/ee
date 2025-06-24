@@ -270,7 +270,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    /* gap: 80px; */
 }
 .section_discover-bot-item {
    display: flex;
