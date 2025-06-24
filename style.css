@@ -309,7 +309,7 @@ body {
     text-align: center;
     vertical-align: middle;
     color: white;
-    max-width: 747px;
+    max-width: 847px;
     margin: 0 auto;
 }
 .section_pay--2 {
@@ -331,6 +331,9 @@ body {
     font-size: 18px;
     color: white;
     margin-top: 30px;
+}
+.section_pay-all--2-all {
+    max-width: 400px;
 }
 .section_pay-all--2-all p{
     text-align: left;
